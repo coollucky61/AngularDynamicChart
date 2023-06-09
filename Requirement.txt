@@ -1,0 +1,31 @@
+    
+    Subject : Measuring performance of companies Profit yearwise which earned by recycled materials.
+	
+	Description of dataset :
+	
+	1. companies.json is master data contains companies which recycles and throws remaining garbage with their state location details.
+	
+	2. material.json is master data which contains 
+	COST field contains unit amount which is saved by recycled material.
+	
+	3. recycling2020.json : This dataset contains total of recycled and remaining garbage quanity in pounds for 
+	each material for each companies for year 2020.
+	
+	4.recycling2021json : similar to recycling2020.json for year 2021.
+	
+	
+	Formula:
+		Profit = Recycling.RECYCLED  * Material.COST
+		 
+
+	Note:
+		Recycling.RECYCLED = Material quantity in POUNDS which are successfully recycled
+		Material.COST = Revenue in USD earned by company for given material per POUNDS.
+		
+	Problem Statement : 
+	A. Develop chart using angular js and chartjs which fulfills following requirements :
+		1. Need to draw bar chart for given year 2021 and 2020. Please check image given in folder.
+		2. Add dropdown for company selection.
+		3. Chart x axis will contain materials.
+		4. Chart y axis will contain Profit
+		5. Datapoint will be Profit earned for given material for each year  which needs to calculated using given formula above.
